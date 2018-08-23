@@ -34,7 +34,7 @@ class Magiccart_Magicslider_Adminhtml_MagicsliderController extends Mage_Adminht
 		try {
 
 				$_helper  = Mage::helper('magicslider');
-				$uploader = new Varien_File_Uploader('image');
+				$uploader = new Varien_File_Uploader('file');
 				$uploader->setAllowedExtensions(array('jpg','jpeg','gif','png'));
 				$uploader->addValidateCallback('catalog_product_image',
 				Mage::helper('catalog/image'), 'validateUploadFile');
